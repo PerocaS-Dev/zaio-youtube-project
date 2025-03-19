@@ -42,11 +42,13 @@ body{
 }
 
 .search {
+    border-radius: 1rem;
     display: flex;
     border: 1px solid #cccccc;
     width: 600px;
     margin-right: 10px;
     height: 100%;
+    overflow: hidden;  /* 👈 This keeps everything inside the rounded border */
 }
 .search input {
     border: none;
@@ -57,14 +59,30 @@ body{
     border: none;
     border-left: 1px solid #cccccc;
     width: 10%;
+    cursor: pointer;
+}
+
+.search button:hover{
+    background: rgb(0 0 0 / 10%);
 }
 .search button i{
     margin: 0px;
     padding: 2px;
 }
 
+#record{
+    padding: 6px;
+    background: rgb(0 0 0 / 5%);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#record:hover{
+    background: rgb(0 0 0 / 10%);
+}
+
 .material-icons {
-    color: #606060;
+    color: black;
     margin-right: 10px;
 }
 
@@ -87,6 +105,7 @@ body{
     margin-bottom: 10px;
 }
 
+
 .category {
     width: 100%;
     display: flex;
@@ -97,25 +116,31 @@ body{
     cursor: pointer;
     font-weight: 400;
 }
+
+.svg-class{
+    margin-right: 24px;
+}
 .category-heading{
     margin: 10px 0px 10px 25px;
-    color: #606060;
+    color: black;
     font-size: 14px;
     font-weight: 500;
 }
 
 .category:hover {
-    background: #f9f9f9;
+    border-radius: 0.5rem;
+    background: rgb(0 0 0 / 10%);
 }
 .active {
-    background: #d0d0d0;
+    border-radius: 0.5rem;
+    background: rgb(0 0 0 / 10%);
     font-weight: 500;
 }
 .active:hover {
-    background: #d0d0d0;
+    background: rgb(0 0 0 / 10%);
 }
 .active i {
-    color: red;
+    color: black;
 }
 
 .category i{

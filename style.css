@@ -29,6 +29,17 @@ body{
     margin-left: 10px;
 }
 
+.logo .material-icons{
+
+    padding: 6px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.logo .material-icons:hover{
+    background: rgb(0 0 0 / 10%);
+}
+
 .navbar .logo{
     display: flex;
     align-items: center;
@@ -228,9 +239,59 @@ body{
     height: 56px;
     width: 100%;
     display: flex;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
+
+.active-scroll-button{
+    height: 60%;
+    padding: 0 10px;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+.scroll-option{
+    height: 60%;
+    padding: 0 10px;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.scroll-option:hover{
+    background: rgb(0 0 0 / 10%);
+}
+
+.scroll-button{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.scroll-button:hover{
+    background: rgb(0 0 0 / 10%);
+}
+
+.scroll-button .material-icons{
+    margin-right: 0px;
+}
+
+
 .video-grid {
     display: flex;
     flex-wrap: wrap;

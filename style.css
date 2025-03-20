@@ -37,12 +37,13 @@ body{
 
 .navbar .searchbar {
     display: flex;
-    height: 32px;
+    height: 40px;
     align-items: center;
 }
 
+
 .search {
-    border-radius: 1rem;
+    border-radius: 1.2rem;
     display: flex;
     border: 1px solid #cccccc;
     width: 600px;
@@ -54,6 +55,10 @@ body{
     border: none;
     width: 90%;
     padding-left: 10px;
+}
+::placeholder{
+    font-size: 16px;
+    padding-left: 5px;
 }
 .search button {
     border: none;
@@ -84,6 +89,43 @@ body{
 .material-icons {
     color: black;
     margin-right: 10px;
+}
+
+.navigation-icons {
+    display: flex;  /* Makes everything inside sit in a row */
+    align-items: center;  /* Aligns items vertically */
+    gap: 12px;  /* Adds space between items */
+}
+
+.create-button{
+    border-radius: 1.2rem;
+    border: none;
+    padding: 8px 16px; /* Shorter way to write padding */
+    display: flex;      /* Enables flexbox */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    gap: 8px; /* Adds space between icon and text */
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 14px;
+    
+
+}
+.create-button:hover{
+    background: rgb(0 0 0 / 10%);
+}
+.create-button .material-icons{
+    margin-right: 0px;
+}
+
+.navigation-icons > .material-icons{
+    padding: 6px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.navigation-icons > .material-icons:hover{
+    background: rgb(0 0 0 / 10%);
 }
 
 .mainbody {
@@ -178,8 +220,16 @@ body{
     width: calc(100vw - 240px);
     height: 100%;
     background: #f9f9f9;
-    border-top: 1px solid #cccccc;
+    /* border-top: 1px solid #cccccc; */
     overflow-y: scroll;
+}
+
+.scrollbar{
+    height: 56px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 .video-grid {
     display: flex;

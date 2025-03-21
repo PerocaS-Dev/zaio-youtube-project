@@ -34,6 +34,7 @@ body{
     padding: 6px;
     border-radius: 100%;
     cursor: pointer;
+    
 }
 
 .logo .material-icons:hover{
@@ -280,7 +281,7 @@ body{
     justify-content: center;
     border: none;
     cursor: pointer;
-    background-color: white;
+    background-color: #f9f9f9;
 }
 
 .scroll-button:hover{
@@ -303,13 +304,18 @@ body{
     margin-bottom: 35px;
     cursor: pointer;
 }
+.video .thumbnail{
+    height: 150px;
+}
 .video .thumbnail img {
     width: 100%;
+    border-radius: 1rem;
+    height: 100%;
 }
 .videos .details {
     display: flex;
     margin-top: 5px;
-    width: 90%;
+    width: 100%;
 }
 .video .profile {
     margin-right: 12px;
@@ -319,6 +325,11 @@ body{
     width: 36px;
     height: 36px;
 }
+
+.details .video-details{
+    width: 85%;
+}
+
 .video .video-details p {
     font-size: 14px;
     font-weight: 500;
@@ -329,6 +340,14 @@ body{
     font-size: 14px;
     font-weight: 500;
     color: #606060;
+}
+.posted-by > span:hover{
+    color: #0f0f0f;
+}
+
+.video .material-icons{
+    margin-right: 0px;
+    width: 20px;
 }
 
 
